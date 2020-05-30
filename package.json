@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "milanbista portfolio",
   "main": "index.js",
-  "start": "npm start",
+  "scripts": {
+    "start": "node index.js"
+  },
   "author": "milan bista",
   "license": "ISC",
   "dependencies": {
