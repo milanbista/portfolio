@@ -373,22 +373,22 @@ nav > ul li a {
 }
 
 .projectsPage .projectsList .movieApp {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  grid-row: 1;
+  grid-column: 2;
   grid-area: movie;
   margin-left: -300px;
 }
 
 .projectsPage .projectsList .foodApp {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: food;
   margin-right: -300px;
 }
 
 .projectsPage .projectsList .ecomApp {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  grid-row: 2;
+  grid-column: 2;
   grid-area: ecom;
   margin-left: -300px;
 }
