@@ -10,8 +10,6 @@ app.use("/static", express.static("public"));
 
 //  HOMEPAGE ENDPOINT
 app.get("/", (req, res) => {
-  console.log("hit");
-
   res.render("homePage");
 });
 
