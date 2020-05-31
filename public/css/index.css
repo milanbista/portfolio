@@ -591,10 +591,10 @@ footer ul a {
 footer #copyright {
   position: absolute;
   bottom: 20px;
-  left: 50%;
+  left: 30%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
   }
@@ -603,7 +603,7 @@ footer #copyright {
   }
   nav #hamburger {
     display: block;
-    right: 50px;
+    right: 25px;
     z-index: 2;
     cursor: pointer;
   }
@@ -682,14 +682,14 @@ footer #copyright {
   .homePage .textArea h1 {
     font-size: 2.5em;
     color: white;
-    padding-left: 30%;
+    padding-left: 20%;
     padding-top: 10%;
   }
   .homePage .textArea h1 #designer {
     color: #f1c40f;
   }
   .homePage .textArea button {
-    margin-left: 31%;
+    margin-left: 20%;
     margin-top: 40px;
     width: 110px;
     height: 40px;
@@ -721,7 +721,7 @@ footer #copyright {
   .aboutPage .aboutContent {
     width: 100vw;
     height: 100px;
-    padding-left: 250px;
+    padding-left: 180px;
     padding-top: 100px;
     z-index: 2;
   }
@@ -754,12 +754,11 @@ footer #copyright {
     display: flex;
   }
   .aboutPage .aboutContent .aboutPage-work .aboutPage-frontEnd p {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .aboutPage .aboutContent .aboutPage-work .aboutPage-frontEnd img {
-    width: 30px;
-    height: 40px;
-    margin: 10px 20px 0 20px;
+    width: 20px;
+    margin: 10px 20px 0 0px;
   }
   .aboutPage .aboutContent .aboutPage-work .aboutPage-backEnd {
     width: 50%;
@@ -770,12 +769,11 @@ footer #copyright {
     display: flex;
   }
   .aboutPage .aboutContent .aboutPage-work .aboutPage-backEnd p {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .aboutPage .aboutContent .aboutPage-work .aboutPage-backEnd img {
-    width: 30px;
-    height: 40px;
-    margin: 10px 20px 0 20px;
+    width: 20px;
+    margin: 10px 20px 0 0px;
   }
   .aboutPage .aboutContent button {
     cursor: pointer;
@@ -834,7 +832,10 @@ footer #copyright {
   .contactPage .contactDescription {
     width: 70%;
     padding-left: 35px;
-    padding-top: 40px;
+    padding-top: 80px;
+  }
+  .contactPage .contactDescription h1 {
+    font-size: 1.2em;
   }
   .contactPage .contactDescription p {
     font-size: 1em;
@@ -848,15 +849,14 @@ footer #copyright {
     margin-right: 10px;
   }
   .contactPage .contactDescription .contact h3 {
-    font-size: 0.8em;
+    font-size: 0.5em;
     display: inline;
   }
   .contactPage .contactForm {
     position: absolute;
-    margin-top: 50px;
-    right: 20px;
-    width: 250px;
-    margin-left: 400px;
+    margin-top: 100px;
+    right: 5px;
+    width: 200px;
   }
   .contactPage .contactForm button {
     font-size: 1em;
@@ -876,15 +876,15 @@ footer #copyright {
     -ms-flex-pack: center;
     justify-content: center;
     color: #ecf0f1;
-    padding-left: 100px;
+    padding-left: 60px;
     height: 350px;
   }
   footer h4 {
-    margin-right: 30px;
+    margin-right: 20px;
   }
   footer #copyright {
     bottom: 20px;
-    left: 32vw;
+    left: 25vw;
     padding-top: 30px;
   }
 }
