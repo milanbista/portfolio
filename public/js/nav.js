@@ -16,10 +16,9 @@ burger.addEventListener("click", () => {
   }
 });
 
-// document.body.addEventListener("click", (event) => {
-//   if (event.target != navList && showNav == false) {
-//     navList.style.animation = "navHide 0.8s ease forwards";
-
-//     showNav = true;
-//   }
-// });
+document.body.addEventListener("click", (event) => {
+  if (showNav == false && event.target != navList && event.target != burger) {
+    navList.style.animation = "navHide 0.4s ease forwards";
+    showNav = true;
+  }
+});

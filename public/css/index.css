@@ -160,6 +160,7 @@ nav > ul li a {
   padding-top: 100px;
   z-index: 2;
   background-image: url("../images/orangeLine.png");
+  background-size: 100px;
 }
 
 .aboutPage .aboutContent h1 {
@@ -259,7 +260,6 @@ nav > ul li a {
 }
 
 .projectsPage {
-  background-image: url("../images/projectline.png");
   width: 100vw;
   padding-bottom: 100px;
 }
@@ -366,35 +366,36 @@ nav > ul li a {
 .projectsPage .projectsList .weatherApp {
   background-image: url("../images/weather.png");
   background-size: cover;
-  grid-row: 1;
-  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: weather;
   margin-right: -300px;
 }
 
 .projectsPage .projectsList .movieApp {
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: movie;
   margin-left: -300px;
 }
 
 .projectsPage .projectsList .foodApp {
-  grid-row: 2;
-  grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: food;
   margin-right: -300px;
 }
 
 .projectsPage .projectsList .ecomApp {
-  grid-row: 2;
-  grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: ecom;
   margin-left: -300px;
 }
 
 .projectsPage h1 {
-  color: #ecf0f1;
+  margin-top: 20px;
+  color: black;
   text-align: center;
   margin-bottom: 100px;
   position: relative;
@@ -594,8 +595,11 @@ footer #copyright {
 }
 
 @media only screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
   nav {
-    position: relative;
+    position: fixed;
   }
   nav #hamburger {
     display: block;
@@ -616,7 +620,7 @@ footer #copyright {
     width: 250px;
     top: 0;
     right: -40px;
-    background-color: #f83434;
+    background-color: #34495e;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
@@ -640,7 +644,7 @@ footer #copyright {
       transform: translateX(0%);
     }
   }
-  @-webkit-keyframes navsHide {
+  @-webkit-keyframes navHide {
     0% {
       -webkit-transform: translateX(0%);
       transform: translateX(0%);
@@ -650,7 +654,7 @@ footer #copyright {
       transform: translateX(100%);
     }
   }
-  @keyframes navsHide {
+  @keyframes navHide {
     0% {
       -webkit-transform: translateX(0%);
       transform: translateX(0%);
@@ -662,6 +666,226 @@ footer #copyright {
   }
   nav ul li {
     margin-top: 40px;
+  }
+  .homePage {
+    width: 100vw;
+    height: 90vh;
+    background-image: url("../images/desk.jpg");
+  }
+  .homePage .textArea {
+    padding-top: 20vh;
+    background-color: #34495e;
+    width: 70%;
+    height: 100%;
+    opacity: 0.8;
+  }
+  .homePage .textArea h1 {
+    font-size: 2.5em;
+    color: white;
+    padding-left: 30%;
+    padding-top: 10%;
+  }
+  .homePage .textArea h1 #designer {
+    color: #f1c40f;
+  }
+  .homePage .textArea button {
+    margin-left: 31%;
+    margin-top: 40px;
+    width: 110px;
+    height: 40px;
+    font-size: 1.2em;
+    background-color: #f1c40f;
+    border-style: none;
+    border-radius: 1000px;
+    outline: none;
+    cursor: pointer;
+  }
+  .homePage .textArea button:hover {
+    background-color: #1df3d6;
+  }
+  .aboutPage {
+    width: 100vw;
+    height: 700px;
+    padding-top: 40px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 3px 30px #696864;
+    box-shadow: 2px 3px 30px #696864;
+  }
+  .aboutPage .aboutContent {
+    width: 100vw;
+    height: 100px;
+    padding-left: 250px;
+    padding-top: 100px;
+    z-index: 2;
+  }
+  .aboutPage .aboutContent h1 {
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+  .aboutPage .aboutContent h1 label {
+    color: #f1c40f;
+  }
+  .aboutPage .aboutContent p {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+  }
+  .aboutPage .aboutContent .aboutPage-work {
+    width: 60vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .aboutPage .aboutContent .aboutPage-work .aboutPage-frontEnd {
+    width: 50%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutPage .aboutContent .aboutPage-work .aboutPage-frontEnd p {
+    font-size: 0.8em;
+  }
+  .aboutPage .aboutContent .aboutPage-work .aboutPage-frontEnd img {
+    width: 30px;
+    height: 40px;
+    margin: 10px 20px 0 20px;
+  }
+  .aboutPage .aboutContent .aboutPage-work .aboutPage-backEnd {
+    width: 50%;
+    height: 100px;
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutPage .aboutContent .aboutPage-work .aboutPage-backEnd p {
+    font-size: 0.8em;
+  }
+  .aboutPage .aboutContent .aboutPage-work .aboutPage-backEnd img {
+    width: 30px;
+    height: 40px;
+    margin: 10px 20px 0 20px;
+  }
+  .aboutPage .aboutContent button {
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-top: 25px;
+    width: 110px;
+    height: 40px;
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#f7bf07),
+      to(#f7a326)
+    );
+    background: linear-gradient(to left, #f7bf07, #f7a326);
+    border-radius: 1000px;
+    border-style: none;
+    -webkit-box-shadow: 2px 2px 10px #555454;
+    box-shadow: 2px 2px 10px #555454;
+  }
+  .aboutPage .aboutContent button:hover {
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#1be8f7),
+      to(#0ab68b)
+    );
+    background: linear-gradient(to left, #1be8f7, #0ab68b);
+    -webkit-box-shadow: 3px 2px 10px #555454;
+    box-shadow: 3px 2px 10px #555454;
+  }
+  .aboutPage .aboutImage {
+    width: 70vw;
+    height: 100px;
+  }
+  .aboutPage .aboutImage img {
+    margin-top: 30px;
+    margin-right: 300px;
+    height: 200px;
+    width: auto;
+  }
+  .projectsPage .projectsList {
+    padding-top: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas:
+      "weather"
+      "movie"
+      "food"
+      "ecom";
+  }
+  .projectsPage .projectsList .projects {
+    margin: 40px 0;
+  }
+  .contactPage .contactDescription {
+    width: 70%;
+    padding-left: 35px;
+    padding-top: 40px;
+  }
+  .contactPage .contactDescription p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  .contactPage .contactDescription .contact {
+    margin-bottom: 10px;
+  }
+  .contactPage .contactDescription .contact img {
+    width: 10px;
+    margin-right: 10px;
+  }
+  .contactPage .contactDescription .contact h3 {
+    font-size: 0.8em;
+    display: inline;
+  }
+  .contactPage .contactForm {
+    position: absolute;
+    margin-top: 50px;
+    right: 20px;
+    width: 250px;
+    margin-left: 400px;
+  }
+  .contactPage .contactForm button {
+    font-size: 1em;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #ecf0f1;
+    padding-left: 100px;
+    height: 350px;
+  }
+  footer h4 {
+    margin-right: 30px;
+  }
+  footer #copyright {
+    bottom: 20px;
+    left: 32vw;
+    padding-top: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
