@@ -179,10 +179,13 @@ nav > ul li a {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 100vw;
   height: 100px;
-  padding-left: 250px;
+  padding-left: 2vw;
+  padding-right: 30vw;
   padding-top: 100px;
   z-index: 2;
   background-size: 100px;
+  position: absolute;
+  width: 70vw;
 }
 
 .aboutPage .aboutContent h1 {
@@ -243,6 +246,7 @@ nav > ul li a {
   cursor: pointer;
   font-size: 1.5em;
   margin-top: 30px;
+  margin-left: 10px;
   width: 110px;
   height: 40px;
   border: 2px solid orange;
@@ -261,8 +265,10 @@ nav > ul li a {
 
 .aboutPage .aboutImage img {
   margin-top: 30px;
-  height: 500px;
-  width: auto;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .projectsPage {
@@ -715,12 +721,14 @@ footer #copyright {
   .aboutPage .aboutContent {
     width: 100vw;
     height: 100px;
-    padding-left: 220px;
-    padding-top: 100px;
-    z-index: 2;
+    padding-left: 10vw;
+    padding-right: 30vw;
+    padding-top: 50px;
+    background-color: transparent;
+    position: absolute;
   }
   .aboutPage .aboutContent h1 {
-    font-size: 2.4em;
+    font-size: 2.2em;
     font-weight: bold;
     margin-bottom: 35px;
   }
@@ -728,7 +736,7 @@ footer #copyright {
     color: #f1c40f;
   }
   .aboutPage .aboutContent p {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 50px;
   }
   .aboutPage .aboutContent .aboutPage-work {
@@ -774,16 +782,13 @@ footer #copyright {
   .aboutPage .aboutContent button {
     cursor: pointer;
     margin-top: -30px;
-  }
-  .aboutPage .aboutImage {
-    width: 70vw;
-    height: 100px;
+    background-color: #f1c40f;
   }
   .aboutPage .aboutImage img {
-    margin-top: 30px;
-    margin-right: 300px;
-    height: 200px;
-    width: auto;
+    width: 600px;
+    position: absolute;
+    right: -210px;
+    top: 105px;
   }
   .projectsPage .projectsList {
     padding-top: 10px;
