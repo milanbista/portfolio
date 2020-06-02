@@ -387,7 +387,7 @@ nav > ul li a {
 }
 
 .projectsPage .projectsList .movieApp {
-  background-image: url("../images/recipe.png");
+  background-image: url("../images/recipe.PNG");
   background-size: cover;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
