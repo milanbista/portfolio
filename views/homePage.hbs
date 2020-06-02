@@ -17,11 +17,12 @@
         <h2 id="hamburger">&#9776;</h2>
         <h1>M<span>B</span></h1>
         <ul id="menuList">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a id="homePageID" href="#">Home</a></li>
+            <li><a id="aboutPageID" href="#">About</a></li>
+            <li><a id="projectPageID" href="#">Project</a></li>
+            <li><a id="contactPageID" href="#">Contact</a></li>
+            <li><a id="resumePageID" href="https://github.com/milanbista" target="_blank"
+                    style="color:rgb(38, 243, 233)">Resume</a></li>
         </ul>
     </nav>
 
@@ -35,7 +36,10 @@
                 <p id="designer">Full-Stack Developer</p>
             </h1>
 
-            <button id="contactButton">Contact</button>
+            <button id="contactButton"><a href="mailto:milanbista111@gmail.com" target="_blank"
+                    style="color: white;text-decoration: none;">Contact</a></button>
+            <button id="resumeButton"><a href="https://github.com/milanbista" target="_blank"
+                    style="color: white;text-decoration: none;">Resume</a></button>
         </div>
     </div>
 
@@ -48,25 +52,26 @@
                 <br />
                 <br />
                 I enjoy creating websites and learning new techonologies that serves a purpose!. My field of expertise
-                is mainly in the following...
+                is main in following...
             </p>
             <div class="aboutPage-work">
                 <div class="aboutPage-frontEnd">
-                    <img src="static/images/server.png" alt="" />
+                    <img src="static/images/htmlicon.png" alt="" />
 
                     <p><b>Front End</b> <br />
                         Ract,Javascript, HTML/CSS</p>
                 </div>
                 <div class="aboutPage-backEnd">
-                    <img src="static/images/server.png" alt="" />
+                    <img src="static/images/backend.png" alt="" />
 
                     <p><b>Back-End</b> <br />Node.Js, MongoDB, MySql</p>
                 </div>
             </div>
-            <button>Email</button>
+            <button><a href="mailto:milanbista111@gmail.com"
+                    style="color: black;text-decoration: none;">Email</a></button>
         </div>
         <div class="aboutImage">
-            <img src="static/images/aboutme.jpg" alt="" />
+            <img src="static/images/about.png" alt="" />
         </div>
     </div>
 
@@ -75,7 +80,7 @@
         <h1>Projects</h1>
         <div class="projectsList">
             <div class=" projects weatherApp">
-                <h2>In Progress</h2>
+                <h2>Weather Forecast</h2>
                 <p>The weather app uses openweather
                     api to fetch data in json format and present
                     to you the output!!!</p>
@@ -83,7 +88,7 @@
                 <button><a href="#">Code</a></button>
             </div>
             <div class=" projects movieApp">
-                <h2>In Progress</h2>
+                <h2>Recipe Search</h2>
                 <p>The weather app uses openweather
                     api to fetch data in json format and present
                     to you the output!!!</p>
@@ -91,20 +96,21 @@
                 <button><a href="#">Code</a></button>
             </div>
             <div class=" projects foodApp">
-                <h2>In Progress</h2>
-                <p>The weather app uses openweather
-                    api to fetch data in json format and present
-                    to you the output!!!</p>
-                <button><a href="#">Project</a></button>
-                <button><a href="#">Code</a></button>
+                <h2>Recipe Search</h2>
+                <p>Search any recipe on the search bar.
+                    The program uses react front end
+                    library to fetch the data from external
+                    api "edamam"</p>
+                <button><a href="https://github.com/milanbista/recipe-search" target="_blank">Project</a></button>
+                <button><a href="https://github.com/milanbista/recipe-search" target="_blank" _blank>Code</a></button>
             </div>
             <div class=" projects ecomApp">
                 <h2>In Progress</h2>
                 <p>The weather app uses openweather
                     api to fetch data in json format and present
                     to you the output!!!</p>
-                <button><a href="#">Project</a></button>
-                <button><a href="#">Code</a></button>
+                <button><a href="https://github.com/milanbista/recipe-search" target="_blank">Project</a></button>
+                <button><a href="https://github.com/milanbista/recipe-search" target="_blank">Code</a></button>
             </div>
         </div>
     </div>
@@ -122,17 +128,17 @@
             </div>
 
             <div class="contact contactPhone">
-                <img src="static/images/email.png" alt="">
+                <img src="static/images/phoneicon.png" alt="">
                 <h3> 9894931107</h3>
             </div>
             <div class="contact contactAddress">
-                <img src="static/images/email.png" alt="">
-                <h3> milanbista111@gmail.com</h3>
+                <img src="static/images/addressicon.png" alt="">
+                <h3>Houston, Tx</h3>
             </div>
         </div>
         <div class="contact contactForm">
             <h2>SAY SOMETHING</h2>
-            <form action="">
+            <form action="mailto:milanbista111@gmail.com" method="POST" , enctype="text/plain">
                 <input type="string" id="name" placeholder=" Your Name..." autocomplete="off">
                 <input type="email" id="email" placeholder="Your Email..." autocomplete="off">
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message...."></textarea>
@@ -146,14 +152,8 @@
 
     <footer>
 
-        <h4>Quick Links</h4>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Resume</a></li>
-        </ul>
+
+        <h4><a href="#">Go to Top &#8593</a></h4>
 
 
         <p id="copyright">&#169, 2020- created by Milan Bista</p>
