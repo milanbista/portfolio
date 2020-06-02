@@ -104,6 +104,7 @@ nav > ul li a {
   width: 100vw;
   height: 90vh;
   background-image: url("../images/desk.jpg");
+  background-size: cover;
 }
 
 .homePage .textArea {
