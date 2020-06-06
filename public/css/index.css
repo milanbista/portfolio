@@ -613,9 +613,6 @@ footer #copyright {
     position: fixed;
   }
 
-  nav > h1 {
-    margin-left: -5px;
-  }
   nav #hamburger {
     display: block;
     right: 25px;
@@ -690,7 +687,7 @@ footer #copyright {
   .homePage .textArea {
     padding-top: 20vh;
     background-color: #34495e;
-    width: 85%;
+    width: 90%;
     height: 100%;
     opacity: 0.8;
   }
