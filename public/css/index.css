@@ -60,7 +60,6 @@ nav > ul li {
   font-size: 1em;
   font-weight: bold;
   position: relative;
-  outline: none;
 }
 
 nav > ul li:hover::before {
@@ -687,12 +686,12 @@ footer #copyright {
   .homePage .textArea {
     padding-top: 20vh;
     background-color: #34495e;
-    width: 70%;
+    width: 83%;
     height: 100%;
     opacity: 0.8;
   }
   .homePage .textArea h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: white;
     padding-left: 20%;
     padding-top: 10%;
@@ -710,7 +709,7 @@ footer #copyright {
     cursor: pointer;
   }
   .homePage .textArea #contactButton {
-    margin-left: 14vw;
+    margin-left: 18vw;
   }
   .aboutPage {
     width: 100vw;
@@ -800,12 +799,19 @@ footer #copyright {
   .projectsPage .projectsList {
     padding-top: 10px;
     display: -ms-grid;
-    display: grid;
+
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
     grid-template-areas:
       "food"
       "movie"
       "weather"
       "ecom";
+
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center; */
   }
   .projectsPage .projectsList .projects {
     margin: 40px 0;
