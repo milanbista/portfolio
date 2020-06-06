@@ -60,6 +60,7 @@ nav > ul li {
   font-size: 1em;
   font-weight: bold;
   position: relative;
+  outline: none;
 }
 
 nav > ul li:hover::before {
@@ -282,8 +283,8 @@ nav > ul li a {
   display: -ms-grid;
   display: grid;
   grid-template-areas:
-    "food movie"
-    "weather ecom ";
+    "weather recipe"
+    "socket chat ";
   justify-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -386,30 +387,35 @@ nav > ul li a {
   margin-right: -300px;
 }
 
-.projectsPage .projectsList .movieApp {
+.projectsPage .projectsList .weatherApp > p {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.projectsPage .projectsList .recipeApp {
   background-image: url("../images/recipe.PNG");
   background-size: cover;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: movie;
+  grid-area: recipe;
   margin-left: -300px;
 }
 
-.projectsPage .projectsList .foodApp {
-  background-image: url("../images/recipe.png");
+.projectsPage .projectsList .socketApp {
+  background-image: url("../images/codescreen.jpg");
   background-size: cover;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: food;
+  grid-area: socket;
   margin-right: -300px;
 }
 
-.projectsPage .projectsList .ecomApp {
-  background-image: url("../images/recipe.png");
+.projectsPage .projectsList .chatApp {
+  background-image: url("../images/chattapp.PNG");
   background-size: cover;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: ecom;
+  grid-area: chat;
   margin-left: -300px;
 }
 
@@ -427,10 +433,10 @@ nav > ul li a {
 }
 
 .projects p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
   margin-top: 30px;
-  padding: 40px 15px;
+  padding: 50px 15px 40px 15px;
   position: relative;
   display: none;
   opacity: 0;

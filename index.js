@@ -9,12 +9,17 @@ app.set("view engine", "hbs");
 //SERVE STATIC FILE
 app.use("/static", express.static("public"));
 
-//  HOMEPAGE ENDPOINT
+//HOMEPAGE ROUTE
 app.get("/", (req, res) => {
   res.render("homePage");
 });
 
-// SETUP THE PORT
+//RESUME ROUTE
+app.get("/resume", (req, res) => {
+  res.render("resume");
+});
+
+//SETUP THE PORT
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`listening to port ${port}`);
