@@ -612,6 +612,10 @@ footer #copyright {
   nav {
     position: fixed;
   }
+
+  nav > h1 {
+    margin-left: -5px;
+  }
   nav #hamburger {
     display: block;
     right: 25px;
@@ -686,14 +690,14 @@ footer #copyright {
   .homePage .textArea {
     padding-top: 20vh;
     background-color: #34495e;
-    width: 83%;
+    width: 85%;
     height: 100%;
     opacity: 0.8;
   }
   .homePage .textArea h1 {
     font-size: 2em;
     color: white;
-    padding-left: 20%;
+    padding-left: 14%;
     padding-top: 10%;
   }
   .homePage .textArea h1 #designer {
@@ -709,7 +713,7 @@ footer #copyright {
     cursor: pointer;
   }
   .homePage .textArea #contactButton {
-    margin-left: 18vw;
+    margin-left: 15%;
   }
   .aboutPage {
     width: 100vw;
